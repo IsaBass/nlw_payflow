@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:nlw_payflow/modules/splash/splash_page.dart';
 import 'package:nlw_payflow/shared/themes/app_images.dart';
+import 'package:nlw_payflow/shared/themes/appcolors.dart';
+
+import 'modules/login/login_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,9 +16,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: AppColors.primary,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: LoginPage(),
     );
   }
 }
